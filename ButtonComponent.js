@@ -16,8 +16,8 @@ class ButtonComponent extends React.Component {
 					<div>
 					<ul className="description animated fadeInUpBig">
 							<li>{this.props.listItem1}</li>
-						<li>{this.props.listItem2}</li>
-					<li>{this.props.listItem3}</li>
+							<li>{this.props.listItem2}</li>
+							<li>{this.props.listItem3}</li>
 					</ul>
 					</div>
 			</div>
