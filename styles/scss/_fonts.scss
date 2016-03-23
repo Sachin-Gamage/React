@@ -1,0 +1,206 @@
+/* Set of embedded font file definitions
+        Fonts used:
+          - Gotham
+          - Gotham Book
+          - Gotham Rounded
+          - Rockwell
+          - Roboto
+*/
+
+$csspath: '../css/font';
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url('#{$csspath}/RockwellStd.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/RockwellStd.otf') format('opentype'), url('#{$csspath}/RockwellStd.woff') format('woff'), url('#{$csspath}/RockwellStd.ttf') format('truetype'), url('#{$csspath}/RockwellStd.svg#RockwellStd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('#{$csspath}/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Gotham-Book.otf') format('opentype'), url('#{$csspath}/Gotham-Book.woff') format('woff'), url('#{$csspath}/Gotham-Book.ttf') format('truetype'), url('#{$csspath}/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('#{$csspath}/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Gotham-Black.otf') format('opentype'), url('#{$csspath}/Gotham-Black.woff') format('woff'), url('#{$csspath}/Gotham-Black.ttf') format('truetype'), url('#{$csspath}/Gotham-Black.svg#Gotham-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('#{$csspath}/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Gotham-Bold.otf') format('opentype'), url('#{$csspath}/Gotham-Bold.woff') format('woff'), url('#{$csspath}/Gotham-Bold.ttf') format('truetype'), url('#{$csspath}/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('#{$csspath}/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Gotham-Book.otf') format('opentype'),
+  url('#{$csspath}/Gotham-Book.woff') format('woff'), url('#{$csspath}/Gotham-Book.ttf') format('truetype'), url('#{$csspath}/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamBook-Italic';
+  src: url('#{$csspath}/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Gotham-BookItalic.otf') format('opentype'),
+  url('#{$csspath}/Gotham-BookItalic.woff') format('woff'), url('#{$csspath}/Gotham-BookItalic.ttf') format('truetype'), url('#{$csspath}/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url('#{$csspath}/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-Bold.otf') format('opentype'), url('#{$csspath}/GothamRounded-Bold.woff') format('woff'), url('#{$csspath}/GothamRounded-Bold.ttf') format('truetype'), url('#{$csspath}/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-MediumItalic';
+  src: url('#{$csspath}/GothamRounded-MediumItalic.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-MediumItalic.otf') format('opentype'), url('#{$csspath}/GothamRounded-MediumItalic.woff') format('woff'), url('#{$csspath}/GothamRounded-MediumItalic.ttf') format('truetype'), url('#{$csspath}/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-LightItalic';
+  src: url('#{$csspath}/GothamRounded-LightItalic.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-LightItalic.otf') format('opentype'), url('#{$csspath}/GothamRounded-LightItalic.woff') format('woff'), url('#{$csspath}/GothamRounded-LightItalic.ttf') format('truetype'), url('#{$csspath}/GothamRounded-LightItalic.svg#GothamRounded-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-BookItalic';
+  src: url('#{$csspath}/GothamRounded-BookItalic.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-BookItalic.otf') format('opentype'), url('#{$csspath}/GothamRounded-BookItalic.woff') format('woff'), url('#{$csspath}/GothamRounded-BookItalic.ttf') format('truetype'), url('#{$csspath}/GothamRounded-BookItalic.svg#GothamRounded-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url('#{$csspath}/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-Medium.otf') format('opentype'), url('#{$csspath}/GothamRounded-Medium.woff') format('woff'), url('#{$csspath}/GothamRounded-Medium.ttf') format('truetype'), url('#{$csspath}/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-Light';
+  src: url('#{$csspath}/GothamRounded-Light.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-Light.otf') format('opentype'), url('#{$csspath}/GothamRounded-Light.woff') format('woff'), url('#{$csspath}/GothamRounded-Light.ttf') format('truetype'), url('#{$csspath}/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-BoldItalic';
+  src: url('#{$csspath}/GothamRounded-BoldItalic.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-BoldItalic.otf') format('opentype'), url('#{$csspath}/GothamRounded-BoldItalic.woff') format('woff'), url('#{$csspath}/GothamRounded-BoldItalic.ttf') format('truetype'), url('#{$csspath}/GothamRounded-BoldItalic.svg#GothamRounded-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('#{$csspath}/GothamRounded-Book.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/GothamRounded-Book.otf') format('opentype'), url('#{$csspath}/GothamRounded-Book.woff') format('woff'), url('#{$csspath}/GothamRounded-Book.ttf') format('truetype'), url('#{$csspath}/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Regular-webfont.eot');
+  src: url('#{$csspath}/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Regular-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Regular-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Thin-webfont.eot');
+  src: url('#{$csspath}/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Thin-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Thin-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Thin-webfont.svg#robotothin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Light-webfont.eot');
+  src: url('#{$csspath}/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Light-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Light-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Light-webfont.svg#robotolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-ThinItalic-webfont.eot');
+  src: url('#{$csspath}/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-ThinItalic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-ThinItalic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-ThinItalic-webfont.svg#robotothin_italic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-BlackItalic-webfont.eot');
+  src: url('#{$csspath}/Roboto-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-BlackItalic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-BlackItalic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-BlackItalic-webfont.svg#robotoblack_italic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Black-webfont.eot');
+  src: url('#{$csspath}/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Black-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Black-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Black-webfont.svg#robotoblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-BoldItalic-webfont.eot');
+  src: url('#{$csspath}/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-BoldItalic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-BoldItalic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-BoldItalic-webfont.svg#robotobold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Bold-webfont.eot');
+  src: url('#{$csspath}/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Bold-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Bold-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Medium-webfont.eot');
+  src: url('#{$csspath}/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Medium-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Medium-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-MediumItalic-webfont.eot');
+  src: url('#{$csspath}/Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-MediumItalic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-MediumItalic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-MediumItalic-webfont.svg#robotomedium_italic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-LightItalic-webfont.eot');
+  src: url('#{$csspath}/Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-LightItalic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-LightItalic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-LightItalic-webfont.svg#robotolight_italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('#{$csspath}/Roboto-Italic-webfont.eot');
+  src: url('#{$csspath}/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('#{$csspath}/Roboto-Italic-webfont.woff') format('woff'), url('#{$csspath}/Roboto-Italic-webfont.ttf') format('truetype'), url('#{$csspath}/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}

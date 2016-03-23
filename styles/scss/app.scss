@@ -1,0 +1,90 @@
+/***********************************************************
+    KUBE PRIMARY SASS FILE
+    Author: Michael Lu
+   (Compile to CSS before use)
+***********************************************************/
+
+@charset "UTF-8";
+
+// Initial Imports and resets
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "_mixins";
+@import "_animate";
+//Embedded Font file definitions
+@import "_fonts";
+//Embedded Vector Icon Font file definition
+@import "_iconfont";
+
+//Colors
+$red: #E01B23;
+$black: #222222;
+$darkgrey: #434343;
+$lightgrey: #F2F2F2;
+$green: #7DC12E;
+$orange: #F07C17;
+$blue: #254D9E;
+$hotpink: #C6006D;
+$purple: #86007C;
+$aqua: #3BC4D8;
+$bordergrey: #B2B2B2;
+
+//Global Settings
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+body {
+  @include transition(all, 500ms, ease-in-out);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'GothamBook', Helvetica, Arial sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+//Z-index levels
+$bringToTop: 50;
+$midLevel: 2;
+$normalLevel: 1;
+
+//Import Common Components
+@import "_alerts";
+@import "_buttons";
+@import "_popups";
+
+
+//Core Structure
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+//Scrollbars
+@import "_scrollbars";
+
+//Launcher Styles
+@import "_launcher";
+
+//Disable Text selection
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}

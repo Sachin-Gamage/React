@@ -1,0 +1,99 @@
+//Custom Scroll bars
+
+.container {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: #000 url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.launcher {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+
+  .launcher-item {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      border: 8px solid rgb(255, 255, 255);
+      border-radius: 50%;
+      box-shadow: 2px 3.464px 24px 0px rgba(0, 0, 0, 0.9);
+      background-image: -webkit-linear-gradient(90deg, #ccc 0%, #fff 100%);
+      width: 360px;
+      height: 360px;
+      display: flex;
+      flex: 0 1 auto;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      p{
+        text-align:center;
+        width:50%;
+        font-size: 36px;
+        font-family: "GothamBook";
+        text-transform: uppercase;
+      }
+      .icon{
+        width:120px;
+        height:150px;
+      }
+
+      &.pricechecker {
+        background-image: -webkit-linear-gradient(90deg, #B60065 0%, #C5006D 100%);
+        .icon{
+          background: url("../img/pricechecker.png") no-repeat center center ;
+          background-size: contain;
+        }
+      }
+      &.balancechecker {
+        background-image: -webkit-linear-gradient(90deg, #36B5C7 0%, #3BC3D8 100%);
+        .icon{
+          background: url("../img/balancechecker.png") no-repeat center center ;
+          background-size: contain;
+        }
+      }
+      &:active{
+        -webkit-filter: brightness(1.2);
+        filter: brightness(1.2);
+        box-shadow: 1px 2px 14px 0px rgba(0, 0, 0, 0.9);
+      }
+    }
+    .description{
+      font-size: 21px;
+      font-family: "Gotham";
+      padding-top:70px;
+      li{
+        padding:0px 0 20px 0;
+      }
+    }
+  }
+  .or-tag{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    padding:200px 75px 75px 75px;
+  }
+  .exitbutton{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100px;
+    height: 100px;
+    z-index: $bringToTop;
+  }
+}

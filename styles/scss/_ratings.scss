@@ -1,0 +1,59 @@
+//Contains star rating system which works to 0.1 accuracy
+
+.starrating {
+  width: 172px;
+  height: 27px;
+  background: url("../img/stars/starsempty.png") no-repeat;
+  background-size: contain;
+
+  .starfiller {
+    background: url("../img/stars/starsfull.png") no-repeat;
+    background-size: auto 100%;
+    width: 70%;
+    height: 100%;
+    margin-left: 1px;
+  }
+}
+
+.subrating {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .label {
+    display: flex;
+    flex: 1 0 auto;
+    margin-right: 20px;
+    font-family: 'Gotham-bold', Helvetica, Arial sans-serif;
+    font-size: 21px;
+  }
+  .subrating-val {
+    width: 270px;
+    height: 25px;
+  }
+  .subrating-0 {
+    background: url("../img/subrating/subrating-0.png") no-repeat;
+    background-size: contain;
+  }
+  .subrating-1 {
+    background: url("../img/subrating/subrating-1.png") no-repeat;
+    background-size: contain;
+  }
+  .subrating-2 {
+    background: url("../img/subrating/subrating-2.png") no-repeat;
+    background-size: contain;
+  }
+  .subrating-3 {
+    background: url("../img/subrating/subrating-3.png") no-repeat;
+    background-size: contain;
+  }
+  .subrating-4 {
+    background: url("../img/subrating/subrating-4.png") no-repeat;
+    background-size: contain;
+  }
+  .subrating-5 {
+    background: url("../img/subrating/subrating-5.png") no-repeat;
+    background-size: contain;
+  }
+}

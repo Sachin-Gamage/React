@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html ng-app="priceChecker" ng-csp>
+<head>
+    <meta charset="utf-8">
+    <title>Kube Pricechecker</title>
+    <meta content='True' name='HandheldFriendly'/>
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport'/>
+    <link href="styles/css/app.css" type="text/css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/samplescripts.js"></script>
+</head>
+
+
+<body >
+
+
+
+<div ng-view class="container animated fadeIn" >
+
+    <div class="launcher" id="content">
+        <div class="launcher-item">
+            <!-- <div class="button pricechecker animated bounceInDown">
+                <div class="icon"></div>
+                <p>Price Checker</p>
+            </div>
+            <ul class="description animated fadeInUpBig">
+                <li>• Check prices, add offers, make a summary.</li>
+                <li>• Read customer reviews and see ratings.</li>
+                <li>• Get suggestions based on scanned items.</li>
+            </ul> -->
+        </div>
+        <!-- <div class="or-tag animated flipInX">- OR -</div>
+        <div class="launcher-item">
+            <div class="button balancechecker animated bounceInDown">
+                <div class="icon"></div>
+                <p>Balance Checker</p>
+            </div>
+            <ul class="description animated fadeInUpBig">
+                <li>• Check the balance on your gift cards.</li>
+                <li>• See how much Kohl’s Cash you have.</li>
+                <li>• Kohl’s Cash availability & expiration.</li>
+            </ul>
+        </div>
+        <div class="exitbutton"></div> -->
+    </div>
+</div>
+
+<script src="index.js"></script>
+<!--Alerts-->
+<div class="alert animated fadeInDownBig">  <!-- Normal alert (green) -->
+    <div class="title">Nice choice. Let me add that item to your summary.
+        <div class="subtitle">Give me a sec while I warm up.</div>
+    </div>
+    <div class="icon-widget ">
+        <i class="icon-checked29"></i>
+    </div>
+</div>
+<div class="alert error animated fadeInDownBig "> <!-- Normal error (red) -->
+    <div class="title">Oh no! its an error.
+        <div class="subtitle">Lemme see if i can fix that.</div>
+    </div>
+    <div class="icon-widget ">
+        <img class="loader-icon " src="styles/img/loading-bubbles.svg"/>
+    </div>
+</div>
+<div class="alert error network animated fadeInDownBig"> <!-- Network error (red) -->
+    <div class="title"><i class="icon-cloud307"></i> We didn’t drop the ball, just the connection.
+        <div class="subtitle">Give it a second, and it'll bounce right back.</div>
+    </div>
+    <div class="icon-widget ">
+        <img class="loader-icon " src="styles/img/loading-bubbles.svg"/>
+    </div>
+</div>
+<div class="alert loading animated fadeInDownBig"> <!-- Loading alert (blue) -->
+    <div class="title">Good Morning! Give me a sec while I warm up.
+        <div class="subtitle"></div>
+    </div>
+    <div class="icon-widget ">
+        <img class="loader-icon circular" src="styles/img/loading-spinning-bubbles.svg"/>
+    </div>
+</div>
+
+<!--Popups-->
+
+<div class="popup"> <!-- addanother popup-->
+    <div class="popupmodal animated fadeIn">
+        <div class="header">
+            <div class="button close"><i class="icon-prohibition45"></i></div>
+        </div>
+        <div class="thumb-icon">
+            <!--<i class="icon-home78"></i>-->
+            <!--<i class="icon-watch10"></i>-->
+            <!--<div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div>-->
+            <div class="thumb-withframe">
+                <div class="frame"></div>
+                <div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div>
+            </div>
+
+        </div>
+        <div class="title">That was a great choice.</div>
+        <div class="subtitle">Did you mean to add another one?</div>
+        <div class="buttonbar">
+            <div class="button">Yes</div>
+            <div class="button">No</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup "> <!-- delete popup-->
+    <div class="popupmodal black animated fadeIn">
+        <div class="header">
+            <div class="button close"><i class="icon-prohibition45"></i></div>
+        </div>
+        <div class="thumb-icon">
+            <!--<i class="icon-home78"></i>-->
+            <!--<i class="icon-watch10"></i>-->
+            <div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div>
+            <!--<div class="thumb-withframe"><div class="frame"></div> <div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div></div>-->
+
+        </div>
+        <div class="title">Remove this item.</div>
+        <div class="subtitle">Are you sure?</div>
+        <div class="buttonbar">
+            <div class="button">Yes</div>
+            <div class="button">No</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup "> <!-- timeout popup-->
+    <div class="popupmodal orange animated fadeIn">
+        <div class="header">
+            <div class="button close"><i class="icon-prohibition45"></i></div>
+        </div>
+        <div class="thumb-icon">
+            <!--<i class="icon-home78"></i>-->
+            <i class="icon-watch10"></i>
+            <!--<div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div>-->
+            <!--<div class="thumb-withframe"><div class="frame"></div> <div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div></div>-->
+
+        </div>
+        <div class="title">Hello, are you still there?</div>
+        <div class="subtitle">Exiting in <span class="timer">9</span> seconds.</div>
+        <div class="buttonbar">
+            <div class="button">Yes, I'm still here!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup"> <!-- Start over popup-->
+    <div class="popupmodal red animated fadeIn">
+        <div class="header">
+            <div class="button close"><i class="icon-prohibition45"></i></div>
+        </div>
+        <div class="thumb-icon">
+            <i class="icon-home78"></i>
+            <!--<i class="icon-watch10"></i>-->
+            <!--<div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div>-->
+            <!--<div class="thumb-withframe"><div class="frame"></div> <div class="thumb" style="background-image:url('styles/img/prod.jpg')"></div></div>-->
+
+        </div>
+        <div class="title">Would you like to start over?</div>
+        <div class="subtitle">This will erase all items and take
+            you back to the home screen.
+        </div>
+        <div class="buttonbar">
+            <div class="button">Yes</div>
+            <div class="button">No</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup exit entrypopup "> <!-- Exit popup-->
+    <div class="popupmodal exit animated fadeIn">
+        <div class="header">
+            <div class="button close"><i class="icon-prohibition45"></i></div>
+        </div>
+        <div class="thumb-icon">
+            <div class="thumb" style="background-image:url('styles/img/key.png')"></div>
+        </div>
+        <div class="subtitle">Please enter your password to exit.</div>
+        <div class="entrybox-widget">
+            <input class="entrybox error" type="text" value="0203571226820203572"/>
+        </div>
+        <div class="buttonbar">
+            <div class="button">Exit</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

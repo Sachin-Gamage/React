@@ -1,0 +1,283 @@
+//Various modal popup styling comes here
+.popup {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+
+  .popupmodal {
+    border: 6px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.8);
+    width: 638px;
+    height: 508px;
+    z-index: $bringToTop;
+    background: $hotpink url("../img/buttonhilight.png") no-repeat center bottom;
+    color: #fff;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      flex: 0 0 auto;
+      height: 40px;
+      flex-direction: row;
+      justify-content: flex-end;
+
+    }
+    .thumb-icon {
+      display: flex;
+      flex: 1 0 auto;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 110px;
+      }
+      .thumb {
+        display: block;
+        position: relative;
+        border: 6px solid #fff;
+        border-radius: 6px;
+        background-color: #fff;
+        width: 132px;
+        height: 132px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 51;
+
+      }
+      .thumb-withframe {
+        .frame {
+          position: absolute;
+          border: 6px solid #fff;
+          border-radius: 12px;
+          width: 132px;
+          height: 132px;
+          margin-left: 16px;
+          margin-top: 16px;
+          z-index: 50;
+        }
+      }
+
+    }
+    .title {
+      font-family: 'Gotham-Bold', Helvetica, Arial sans-serif;
+      font-size: 36px;
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .subtitle {
+      font-family: 'GothamBook', Helvetica, Arial sans-serif;
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 61px;
+      padding: 0 40px;
+    }
+    .buttonbar {
+      display: flex;
+      flex: 0 0 114px;
+      flex-direction: row;
+      text-transform: uppercase;
+
+      .button {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: row;
+        padding: 0;
+        font-family: 'Gotham-Bold', Helvetica, Arial sans-serif;
+        font-size: 26px;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(2) {
+          background: url("../img/popupbuttondivider.png") no-repeat center left;
+        }
+      }
+    }
+    &.black {
+      background: #232323 url("../img/buttonhilight.png") no-repeat center bottom;
+    }
+    &.red {
+      background: $red url("../img/buttonhilight.png") no-repeat center bottom;
+    }
+    &.green {
+      background: $green url("../img/buttonhilight.png") no-repeat center bottom;
+    }
+    &.orange {
+      background: $orange url("../img/buttonhilight.png") no-repeat center bottom;
+      span {
+        font-family: 'Gotham-Bold', Helvetica, Arial sans-serif;
+      }
+    }
+    &.blue {
+      background: #1BABB4 url("../img/buttonhilight.png") no-repeat center bottom;
+    }
+  }
+
+  .entrybox-widget {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .entrybox {
+      border-radius: 10px;
+      border: none;
+      background-color: #fff;
+      width: 642px;
+      height: 90px;
+      text-align: center;
+      font-family: Courier, 'Rockwell';
+      font-weight: bold;
+      font-size: 36px;
+      letter-spacing: 4px;
+      padding-left: 20px;
+      padding-right: 60px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+
+      &.error {
+        background: #fff url("../img/dropdown-error.png") no-repeat 97% 34px;
+      }
+      &.success {
+        background: #fff url("../img/dropdown-verified.png") no-repeat 97% 34px;
+      }
+
+    }
+  }
+
+  &.entrypopup {
+    .popupmodal {
+      width: 989px;
+      height: 508px;
+      background: url("../img/buttonhilight-wide.png") no-repeat center bottom;
+      &.keyboardopen {
+        margin-top: -465px;
+      }
+      .subtitle {
+        padding: 0;
+        margin: 20px 0 0 0;
+      }
+      .thumb {
+        width: 218px;
+        height: 125px;
+      }
+      .subtitle {
+        font-size: 34px;
+        &.centered {
+          flex: 1 0 auto;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          align-content: center;
+          padding: 40px 240px;
+        }
+      }
+      .tabbed.header {
+        background: #fff;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        .tab {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background: #AAAAAA;
+          font-family: 'GothamBook', Helvetica, Arial sans-serif;
+          font-size: 28px;
+          text-transform: uppercase;
+          padding: 24px 0;
+          margin-right: 5px;
+          width: 270px;
+          text-align: center;
+          background-image: -webkit-linear-gradient(90deg, rgb(136, 136, 136) 0%, rgb(170, 170, 170) 12%);
+          cursor: pointer;
+          &.active {
+            font-family: 'Gotham-Bold', Helvetica, Arial sans-serif;
+            &.offer {
+              background: $purple;
+              .activecorners {
+                background: url("../img/modaltabcorners/offers-corner-right.png") bottom right no-repeat;
+                margin-left: 0;
+                height: 15px;
+                width: 280px;
+              }
+            }
+            &.kohlscash {
+              background: $green;
+              .activecorners {
+                background: url("../img/modaltabcorners/kc-corner-left.png") bottom left no-repeat, url("../img/modaltabcorners/kc-corner-right.png") bottom right no-repeat;
+              }
+            }
+            &.giftcard {
+              background: #1A366F;
+              .activecorners {
+                background: url("../img/modaltabcorners/gc-corner-left.png") bottom left no-repeat, url("../img/modaltabcorners/gc-corner-right.png") bottom right no-repeat;
+              }
+            }
+
+          }
+          .activecorners {
+            position: absolute;
+            margin-top: 9px;
+            margin-left: -15px;
+            height: 15px;
+            width: 296px;
+          }
+
+        }
+
+        .close {
+          color: #222222;
+          align-self: center;
+          margin-left: 110px;
+        }
+      }
+      .tabcontent {
+        display: none;
+        flex: 1 0 auto;
+        flex-direction: column;
+      }
+      &.offer {
+        background-color: $purple;
+        .offer-tab {
+          display: flex;
+        }
+      }
+      &.kohlscash {
+        background-color: $green;
+        .kohlscash-tab {
+          display: flex;
+        }
+      }
+      &.giftcard {
+        background-color: #1A366F;
+        .giftcard-tab {
+          display: flex;
+        }
+      }
+      &.upc {
+        background-color: #1BABB4;
+      }
+      &.exit {
+        background-color: $black;
+        .thumb {
+          background: none;
+          border: none;
+          background: no-repeat center center;
+        }
+      }
+    }
+  }
+  &.open {
+    display: flex;
+  }
+}

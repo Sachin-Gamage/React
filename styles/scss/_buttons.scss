@@ -1,0 +1,54 @@
+//Button Classes can be found here
+
+.button {
+  font-family: 'Gotham', Helvetica, Arial sans-serif;
+  padding: 16px 23px;
+  font-size: 21px;
+  cursor: pointer;
+  @include transition(all, 300ms, ease-in-out);
+
+  &:active {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  &:active.disabled {
+    -webkit-filter:none !important;
+    filter: none !important;
+    cursor: default;
+  }
+  &.blackbutton {
+    background: $black;
+    color: white;
+    box-shadow: 1px 1.732px 10px 0px rgb(0, 0, 0);
+    &:active {
+      -webkit-filter: invert(80%);
+      filter: invert(80%);
+
+    }
+  }
+  &.whitebutton {
+    background: white;
+    color: $black;
+    border: 1px solid $black;
+    text-transform: uppercase;
+    &.selected {
+      outline: 2px solid $black;
+      font-family: 'Gotham-Bold', Helvetica, Arial sans-serif;
+    }
+  }
+  &.disabled{
+    opacity:0.6;
+
+
+  }
+}
+
+.whitebutton-container {
+  background: white;
+  color: $black;
+  border: 1px solid $black;
+  font-family: 'Gotham', Helvetica, Arial sans-serif;
+  padding: 16px 23px;
+  font-size: 21px;
+  @include transition(all, 300ms, ease-in-out);
+}
